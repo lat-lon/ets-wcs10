@@ -3181,6 +3181,95 @@
                   </tbody>
                </table>
             </div>
+            <div class="atc">
+               <table frame="border">
+                  <caption>1.108 Test case wcs1-0-0:describecoverage_operations-describecoverage_response-supportedcrss-rectifiedgrid</caption>
+                  <tbody>
+                  <tr>
+                     <th>Test case ID</th>
+                     <td>wcs1-0-0:describecoverage_operations-describecoverage_response-supportedcrss-rectifiedgrid</td>
+                  </tr>
+                  <tr>
+                     <th>Test purpose</th>
+                     <td>Verify that for coverages with at least one RectifiedGrid, each of its RectifiedGrids has an srsName attribute that references one of its supportedCRSs.</td>
+                  </tr>
+                  <tr>
+                     <th>Test method</th>
+                     <td>Pass if a DescribeCoverage response contains for each RectifiedGrid a srsName attribute that references one of its supportedCRSs.</td>
+                  </tr>
+                  <tr>
+                     <th>Reference</th>
+                     <td>
+                        <a href="http://cite.opengeospatial.org/OGCTestData/wcs/1.0.0/specs/03-065r6.html#8.3_DescribeCoverage_response">OGC 03-065r6: cl. 8.3.4.1</a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Test type</th>
+                     <td>Capability</td>
+                  </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class="atc">
+               <table frame="border">
+                  <caption>1.109 Test case wcs1-0-0:describecoverage_operations-describecoverage_response-supported_interpolations</caption>
+                  <tbody>
+                  <tr>
+                     <th>Test case ID</th>
+                     <td>wcs1-0-0:describecoverage_operations-describecoverage_response-supported_interpolations</td>
+                  </tr>
+                  <tr>
+                     <th>Test purpose</th>
+                     <td>Verify that for each CoverageOffering the SupportedInterpolations is absent, empty, or has a default attribute that specifies one of the child interpolation methods.</td>
+                  </tr>
+                  <tr>
+                     <th>Test method</th>
+                     <td>Pass if in a DescribeCoverage response for each CoverageOffering a SupportedInterpolations is absent, empty, or has a default attribute that specifies one of the child interpolation methods.</td>
+                  </tr>
+                  <tr>
+                     <th>Reference</th>
+                     <td>
+                        <a href="http://cite.opengeospatial.org/OGCTestData/wcs/1.0.0/specs/03-065r6.html#8.3.6_SupportedInterpolations">OGC 03-065r6: cl. 8.3.6</a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Test type</th>
+                     <td>Capability</td>
+                  </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class="atc">
+               <table frame="border">
+                  <caption>1.110 Test case wcs1-0-0:getcapabilities_operations-getcapabilities_request-sections</caption>
+                  <tbody>
+                  <tr>
+                     <th>Test case ID</th>
+                     <td>wcs1-0-0:getcapabilities_operations-getcapabilities_request-sections</td>
+                  </tr>
+                  <tr>
+                     <th>Test purpose</th>
+                     <td>Verify that the version and updateSequence attributes are omitted from all of the three capabilities sections (Service, Capability, and ContentMetadata) element when the full Capabilities XML is retrieved.</td>
+                  </tr>
+                  <tr>
+                     <th>Test method</th>
+                     <td>Pass if in a GetCapabilities response the version and updateSequence attributes are omitted from all of the three capabilities sections (Service, Capability, and ContentMetadata) elements.</td>
+                  </tr>
+                  <tr>
+                     <th>Reference</th>
+                     <td>
+                        <a href="http://cite.opengeospatial.org/OGCTestData/wcs/1.0.0/specs/03-065r6.html#7.3.2_Service">OGC 03-065r6: cl. 7.3.2</a>
+                        <a href="http://cite.opengeospatial.org/OGCTestData/wcs/1.0.0/specs/03-065r6.html#7.3.3_Capability">OGC 03-065r6: cl. 7.3.3</a>
+                        <a href="http://cite.opengeospatial.org/OGCTestData/wcs/1.0.0/specs/03-065r6.html#7.3.4_ContentMetadata_and">OGC 03-065r6: cl. 7.3.4.1</a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Test type</th>
+                     <td>Capability</td>
+                  </tr>
+                  </tbody>
+               </table>
+            </div>
          </div>
       </div>
    </body>
